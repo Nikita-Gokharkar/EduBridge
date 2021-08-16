@@ -19,16 +19,17 @@ System.out.println(list);
 list.set(1,"tina");
 System.out.println(list);
 
+System.out.println(list.size());	
+
+System.out.println(list.contains("Mike"));
+
 list.remove("Sheena");
 System.out.println(list);
 
-list.remove(4);          // remove by index
+list.remove(4);            // remove by index
 System.out.println(list);
 
-list.size();
-System.out.println(list);
-
-list.reverse();
+Collections.reverse(list);
 System.out.println(list);
 
 list.removeAll(list);
@@ -37,10 +38,7 @@ System.out.println(list);
 list.add("Bear");
 System.out.println(list);
 
-list.getIndex("Nik");
-System.out.println(list);
-
-list.clearAll(list);
+list.clear();
 System.out.println(list);
 }
 }
