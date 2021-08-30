@@ -51,11 +51,11 @@ class Menu extends AccountInfo {
 	public void getAccountType()
 	{
 		System.out.println("Select the account you want to access: ");
-		System.out.println("|-----------------------|");
-		System.out.println("|   1: Checking Account |");
-		System.out.println("|   2: Saving Account   |");
-		System.out.println("|   3: Exit             |");
-		System.out.println("|-----------------------|");
+		System.out.println(" ________________________");
+		System.out.println("|   1: Checking Account  |");
+		System.out.println("|   2: Saving Account    |");
+		System.out.println("|   3: Exit              |");
+		System.out.println("|________________________|");
 
 		int selectoptn = sc.nextInt();
 		
