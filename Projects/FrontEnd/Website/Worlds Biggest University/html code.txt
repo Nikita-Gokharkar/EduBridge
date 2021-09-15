@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Worlds Biggest University</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+<div id="container">
+<div class="slider">
+	<header>
+ 	<div class="nav">
+ 		<div class="logo">
+ 			<img src="/img/logo.png">
+ 	 <ul>
+ 		<li class="active"><a href="#">HOME</a></li>
+ 		<li><a href="#">SERVICES</a></li>
+ 		<li><a href="#">ABOUT</a></li>
+ 		<li><a href="#">GALLERY</a></li>
+ 		<li><a href="#">CONTACT</a></li>
+ 	 </ul>
+      </div>
+
+  <div class="title">
+  	<h1>Worlds Biggest University</h1>
+  	<p>University, institution of higher education, usually comprising a college of arts and sciences</p>
+  </div>
+  <div class="button">
+  <a href="#" class="btn">Learn More</a>
+  </div>
+</div>
+
+ </header>
+ 
+ <!---------courses------------->
+
+ <section class="courses">
+	<h1>Courses in our University</h1>
+	<p>Course is a class you take in school to study a particular subject.</p>
+
+	<div class="row">
+		<div class="course-col">
+			<h3>Diploma</h3>
+			<p>A diploma is a certificate or deed issued by an educational institution, such as college or university, that testifies that the recipient has successfully completed a particular course of study.</p>
+		</div>
+
+		<div class="course-col">
+		  <h3>Degree</h3>
+			<p>A degree is a certificate or deed issued by an educational institution, such as college or university, that testifies that the recipient has successfully completed a particular course of study.</p>
+		</div>	
+
+	  <div class="course-col">
+			<h3>Masters</h3>
+			<p>A master is a certificate or deed issued by an educational institution, such as college or university, that testifies that the recipient has successfully completed a particular course of study</p>
+		</div>
+	</div>
+</section>
+
+<!-------------------------skills---------------------------->
+
+<section class="aim">
+	<div class="skills">
+		<h1><span style="color: #B22222;">CREATIVITY</span>.<span style="color: #FF7F50;">SKILLS</span>.  
+			<span style="color: #32CD32;">MANAGEMENT</span></h1>
+	</div>
+	<p class="para">Creativity is the ability to think about a task or a problem in a new or different way, or the ability to use the imagination to generate new ideas.<br><br>You can discover fresh ways of doing things by observing the world around you. Watching how people work can inspire you to think of ways to help them be more efficient. The way someone approaches a task might give you ideas of how to help someone else who performs a similar task. Paying close attention to how people use products or services can help you see how well they function, and then you can devise ways to improve them.</p>
+			
+	<div class="aim-btn">
+		<a href="#" class="button4">Process</a>
+	</div>
+</section>
+
+<!------------------image slider------------------>
+
+<section class="img-slider">
+	<div class="slider">
+		<h1>GALLERY</h1>
+		<div class="slides"></div>
+	</div>
+	
+</section>
+
+<!----------------Email-------------------->
+
+<section class="cnt">
+	<h1>Enroll in our campus courses from the world</h1>
+	<form>
+		<input type="Name" class="cnt-name" placeholder= "Name"><br><br><br>
+		<input type="Email" class="cnt-email" placeholder= "Email"><br><br><br><br><br><br><br>
+		<a href="" class="button8">CONTACT US</a>
+	</form>
+</section>
+
+<!----------------------------------------Footer------------------------------------------->
+<section class="foot">
+	<div class="foot-head">
+		<h1>About Us</h1>
+		<p> This was established in 1857 consequent to 'Wood's Education Dispatch drafted by Charles Wood in 1854.<br>University is one of the top Public universities in the wworld. It is ranked 1001 in QS Global World Rankings 2021.</p>
+	</div>
+
+	<div class="foot-flex">
+		<div class="main-nav">
+			<h1>Main Navigation</h1>
+			  <div><a href="#">Home</a></div>
+			  <div><a href="#">Services</a></div>
+			  <div><a href="#">About</a></div>
+			  <div><a href="#">Gallery</a></div>
+			  <div><a href="#">Contact</a></div>
+		</div>
+
+		<div class="main-courses">
+			<h1>Courses</h1>
+			  <div><a href="#">Diploma</a></div>
+			  <div><a href="#">Degree</a></div>
+			  <div><a href="#">Master</a></div>		 
+		</div>
+		
+		<div class="main-campus">
+			<h1>Campus</h1>
+			   <div><a href="#">London</a></div>
+			  <div><a href="#">New York</a></div>
+			  <div><a href="#">Washington</a></div>		
+		</div>
+
+		<div class="main-blog">
+			<h1>Blog</h1>
+			 <div><a href="#">Maths Classes</a></div>
+			 <div><a href="#">Swimming Classes</a></div>
+			 <div><a href="#">Coding Classes</a></div>	
+		</div>
+
+		<div class="abcd">
+			
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+
+			
+		</div>
+	</div>
+</section>
+  </div>
+</div>
+</div>
