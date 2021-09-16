@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+html{
+    font-size: 62.5%;
+   
+}
+
+.btn{
+    cursor: pointer;
+    border:.2px solid orange;
+    color: orange;
+    background:none;
+    padding: 5px 3px;
+    margin-top: 1px;
+    position: relative;
+    font-size: 2px;
+}
+
+
+
+.btn:hover{
+    clip-path: circle(100%);
+}
+
+.btn:hover{
+    color:#fff;
+}
+
+.heading{
+    display: inline-block;
+    color:#333;
+    margin:2px 0;
+    padding:1px 0;
+    padding-top: 8px;
+    font-size: 3px;
+    border-bottom: 2px solid orange;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding: 2px 3px;
+}
+
+header .logo{
+    font-size: 3px;
+    color:#fff;
+}
+
+header .logo span{
+    color: orange;
+}
+
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul li{
+    margin:0 1px;
+}
+
+header .navbar ul li a{
+    color:#fff;
+    font-size: 2px;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color: orange;
+}
+
+header #menu{
+    font-size: 3px;
+    color: orange;
+    cursor: pointer;
+    display: none;
+}
+
+header.header-active{
+    background:#fff;
+    box-shadow: 1px 3px rgba(0,0,0,.3);
+}
+
+header.header-active .logo,
+header.header-active .navbar a{
+    color:#333;
+}
+
+.home{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(https://youtu.be/mvJHw64fxgQ) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.home h1{
+    font-size: 6px;
+    color:#fff;
+    text-align: center;
+    text-shadow: 3px 5px #000;
+    padding: 1px;
+    text-transform: uppercase;
+}
+
+.home .btn{
+    box-shadow: 3 5px #000;
+    color:#fff;
+}
+
+.about .row{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+    padding:2px;
+}
+
+.about .row .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    padding:2px;
+}
+
+.about .row .content h3{
+    color:#333;
+    font-size: 4rem;
+}
+
+.about .row .content p{
+    color:#666;
+    font-size: 1.7rem;
+    padding:1rem 0;
+}
+
+.service{
+    min-height: 100vh;
+    text-align: center;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height:23rem;
+    width:35rem;
+    margin:1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.service .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.service .box-container .box .info{
+    height:90%;
+    width:90%;
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.service .box-container .box:hover .info{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.service .box-container .box .info h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.service .box-container .box .info p{
+    font-size: 1.2rem;
+    color:#666;
+    padding:1rem 2rem;
+}
+
+.trainer{
+    min-height: 100vh;
+    text-align: center;
+    background:#333;
+}
+
+.trainer .heading{
+    color:#fff;
+}
+
+.trainer .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trainer .box-container .box{
+    height:40rem;
+    margin:1.5rem 1rem;
+    width:27rem;
+    border:.5rem solid var(--orange);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem #000;
+}
+
+.trainer .box-container .box img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainer .box-container .box .info{
+    color:#333;
+    background:#fff;
+    border-top:.5rem solid var(--orange);
+    position: absolute;
+    bottom: 0; left: 0;
+    font-size: 2rem;
+    width:100%;
+    padding:1rem 0;
+}
+
+.trainer .box-container .box .share{
+    position: absolute;
+    top:1rem; right: -100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.trainer .box-container .box:hover .share{
+    right:0;
+}
+
+.trainer .box-container .box .share a{
+    height:4rem;
+    width:4.5rem;
+    line-height: 4rem;
+    color:#333;
+    font-size: 2rem;
+    background:#fff;
+    margin:.5rem 1rem;
+}
+
+.trainer .box-container .box .share a:hover{
+    background:var(--orange);
+    color:#fff;
+}
+
+.plan{
+    min-height: 100vh;
+    text-align: center;
+    background:#eee;
+}
+
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan .box-container .box{
+    background:#fff;
+    margin:2rem;
+    width:30rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.plan .box-container .box:hover{
+    transform: scale(1.04);
+}
+
+.plan .box-container .box .title{
+    font-size: 2.5rem;
