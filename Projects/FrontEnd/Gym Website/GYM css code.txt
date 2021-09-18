@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
-
+/*:root{
+    --orange:#ff9f1a;
+}*/
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -12,27 +14,41 @@
     text-decoration: none;
 }
 
-
+/*::selection{
+    background:var(--orange);
+    color:#fff;
+}*/
 
 html{
     font-size: 62.5%;
-   
+    overflow-x: hidden;
 }
 
 .btn{
     cursor: pointer;
-    border:.2px solid orange;
+    border: 2px solid orange;
     color: orange;
     background:none;
-    padding: 5px 3px;
-    margin-top: 1px;
+    padding: 6px 10px;
+    margin-top: 16px;
     position: relative;
-    font-size: 2px;
+    z-index: 0;
+    font-size: 18px;
 }
 
+.btn::before{
+    content: ' ';
+    position: absolute;
+    top:0; left: 0;
+    height:100%;
+    width:100%;
+    background: orange;
+    z-index: -1;
+    clip-path: circle(0% at 0% 10%);
+    transition: .3s;
+}
 
-
-.btn:hover{
+.btn:hover::before{
     clip-path: circle(100%);
 }
 
@@ -42,12 +58,11 @@ html{
 
 .heading{
     display: inline-block;
-    color:#333;
-    margin:2px 0;
-    padding:1px 0;
-    padding-top: 8px;
-    font-size: 3px;
-    border-bottom: 2px solid orange;
+    margin:2rem 0;
+    padding:1rem 0;
+    padding-top: 8rem;
+    font-size: 3rem;
+    border-bottom: .2rem solid orange;
 }
 
 header{
@@ -58,11 +73,12 @@ header{
     position: fixed;
     top:0; left: 0;
     z-index: 1000;
-    padding: 2px 3px;
+    padding:2rem 3rem;
+
 }
 
 header .logo{
-    font-size: 3px;
+    font-size: 3rem;
     color:#fff;
 }
 
@@ -75,15 +91,16 @@ header .navbar ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 header .navbar ul li{
-    margin:0 1px;
+    margin:0 1rem;
 }
 
 header .navbar ul li a{
     color:#fff;
-    font-size: 2px;
+    font-size: 2rem;
 }
 
 header .navbar ul li a.active,
@@ -92,7 +109,7 @@ header .navbar ul li a:hover{
 }
 
 header #menu{
-    font-size: 3px;
+    font-size: 3rem;
     color: orange;
     cursor: pointer;
     display: none;
@@ -100,7 +117,7 @@ header #menu{
 
 header.header-active{
     background:#fff;
-    box-shadow: 1px 3px rgba(0,0,0,.3);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
 }
 
 header.header-active .logo,
@@ -110,7 +127,8 @@ header.header-active .navbar a{
 
 .home{
     min-height: 100vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(https://youtu.be/mvJHw64fxgQ) no-repeat;
+    
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../img/g3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -118,20 +136,27 @@ header.header-active .navbar a{
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    /*clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 88%, 0 100%);
+
 }
 
 .home h1{
-    font-size: 6px;
+    font-size: 6rem;
     color:#fff;
     text-align: center;
-    text-shadow: 3px 5px #000;
-    padding: 1px;
+    text-shadow: 0 .3rem .5rem #000;
+    padding:0 1rem;
     text-transform: uppercase;
 }
 
+.home p{
+    font-size: 16px;
+    color: #fff;
+}
+
 .home .btn{
-    box-shadow: 3 5px #000;
+    box-shadow: 0 .3rem .5rem #000;
     color:#fff;
 }
 
@@ -141,12 +166,12 @@ header.header-active .navbar a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 8px;
+    padding-top: 8rem;
 }
 
 .about .row .image{
     flex: 1 1 40rem;
-    padding:2px;
+    padding:2rem;
 }
 
 .about .row .image img{
@@ -157,7 +182,7 @@ header.header-active .navbar a{
 
 .about .row .content{
     flex: 1 1 40rem;
-    padding:2px;
+    padding:2rem;
 }
 
 .about .row .content h3{
@@ -230,6 +255,7 @@ header.header-active .navbar a{
     min-height: 100vh;
     text-align: center;
     background:#333;
+    
 }
 
 .trainer .heading{
@@ -247,7 +273,7 @@ header.header-active .navbar a{
     height:40rem;
     margin:1.5rem 1rem;
     width:27rem;
-    border:.5rem solid var(--orange);
+    border:.5rem solid orange;
     overflow: hidden;
     position: relative;
     box-shadow: 0 .3rem .5rem #000;
@@ -262,9 +288,8 @@ header.header-active .navbar a{
 .trainer .box-container .box .info{
     color:#333;
     background:#fff;
-    border-top:.5rem solid var(--orange);
+    border-top:.5rem solid orange;
     position: absolute;
-    bottom: 0; left: 0;
     font-size: 2rem;
     width:100%;
     padding:1rem 0;
@@ -272,13 +297,17 @@ header.header-active .navbar a{
 
 .trainer .box-container .box .share{
     position: absolute;
-    top:1rem; right: -100%;
+    top:1rem; 
+    right: -100%;
     display: flex;
     flex-flow: column;
+    color: #000;
 }
 
 .trainer .box-container .box:hover .share{
     right:0;
+    color: #000;
+
 }
 
 .trainer .box-container .box .share a{
@@ -292,7 +321,7 @@ header.header-active .navbar a{
 }
 
 .trainer .box-container .box .share a:hover{
-    background:var(--orange);
+    background: orange;
     color:#fff;
 }
 
@@ -306,7 +335,6 @@ header.header-active .navbar a{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .plan .box-container .box{
@@ -322,3 +350,185 @@ header.header-active .navbar a{
 
 .plan .box-container .box .title{
     font-size: 2.5rem;
+    background: orange;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.plan .box-container .box .price{
+    font-size: 4rem;
+    color:#333;
+    padding-top:1rem;
+}
+
+.plan .box-container .box .price span{
+    font-size: 2rem;
+}
+
+.plan .box-container .box .month{
+    font-size: 2rem;
+    color:#666;
+}
+
+.plan .box-container .box ul{
+    margin:2rem 8rem;
+    list-style: none;
+}
+
+.plan .box-container .box ul li{
+    text-align: left;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#333;
+}
+
+.plan .box-container .box ul li i{
+    color: orange;
+    padding:0 .5rem;
+}
+
+.plan .box-container .box .btn{
+    margin-bottom: 3rem;
+}
+
+.register{
+    min-height: 90vh;
+    text-align: center;
+    background:#000;
+    padding-bottom: 3rem;
+}
+
+.register .heading{
+    color:#fff;
+}
+
+.register form{
+    width:75%;
+    margin:0 auto;
+}
+
+.register form .inputBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.register form .inputBox input, textarea{
+    height:4rem;
+    width:49%;
+    background:#111;
+    color:#fff;
+    padding:0 1rem;
+    margin:1rem 0;
+    font-size: 2rem;
+    border:none;
+}
+
+.register form .inputBox input:focus, textarea:focus{
+    background:#222;
+}
+
+.register form textarea{
+    height:20rem;
+    resize: none;
+    padding:1rem;
+    width:100%;
+}
+
+.register form .btn:hover{
+    background: orange;
+}
+
+.footer{
+    color:#eee;
+    background:#111;
+    text-align: center;
+    padding:2rem 1rem;
+    font-size: 2rem;
+}
+
+.footer a{
+    color: orange;
+}
+
+.footer a:hover{
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header #menu{
+        display: block;
+    }
+
+    header .navbar{
+        position: fixed;
+        top:-100rem; left: 0;
+        width: 100%;
+        opacity: 0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.3);
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem 0;
+    }
+
+    header .navbar ul li{
+        margin:1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        color: #333;
+        display: block;
+    }
+
+    header .navbar.nav-toggle{
+        top:8rem;
+        opacity: 1;
+    }
+
+    .register form{
+        width:90%;
+    }
+
+}
+
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home h1{
+        font-size: 5rem;
+    }
+
+    .register form .inputBox input{
+        width:100%;
+    }
+
+}
