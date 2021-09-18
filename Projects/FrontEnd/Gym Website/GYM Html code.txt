@@ -7,6 +7,8 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="real.css">
 
 </head>
@@ -22,12 +24,12 @@
 
 <nav class="navbar">
     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#trainer">Trainer</a></li>
-        <li><a href="#plan">Plan</a></li>
-        <li><a href="#register">Register</a></li>
+        <li><a class="active" href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#trainer">trainer</a></li>
+        <li><a href="#plan">plan</a></li>
+        <li><a href="#register">register</a></li>
     </ul>
 </nav>
 
@@ -36,13 +38,14 @@
 <!-- header section ends -->
 
 <!-- home section starts  -->
+
 <section class="home" id="home">
 
-<h1>it's never too easy but <br> you have to try</h1>
+<h1>Fit is not a destination<br>it is a way of Life</h1>
+<p>Strong Mind Strong Body</p>
 
-<div class="button">
-<a href="#"><button class="btn">Get Started</button></a>
-</div>
+<a href="#"><button class="btn">get started</button></a>
+
 </section>
 
 <!-- home section ends -->
@@ -54,14 +57,14 @@
 <div class="row">
 
     <div class="image">
-        <img src="/img/g1.jpg" alt="about">
+        <img src="/img/g1.jpg" alt="">
     </div>
 
     <div class="content">
-        <h3>A Word About Us</h3>
+        <h3>a word about us</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illo saepe! Magnam, unde explicabo amet perferendis voluptate distinctio facilis quae ipsa quas! Officiis veritatis aut est vero id, debitis pariatur?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta laboriosam. Laborum aspernatur laboriosam deserunt cupiditate laudantium illum commodi. Vero.</p>
-        <a href="#"><button class="btn">Learn More</button></a>
+        <a href="#"><button class="btn">learn more</button></a>
     </div>
 
 </div>
@@ -74,12 +77,12 @@
 
 <section class="service" id="service">
 
-<h1 class="heading">Our Services</h1>
+<h1 class="heading">our services</h1>
 
 <div class="box-container">
 
     <div class="box">
-        <img src="/img/img1.jpg" alt="gym">
+        <img src="/img/trade.jpg" alt="">
         <div class="info">
             <h3>treadmill</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
@@ -88,7 +91,7 @@
     </div>
 
     <div class="box">
-        <img src="/img/img2.jpg" alt="">
+        <img src="/img/yoga1.jpeg" alt="">
         <div class="info">
             <h3>yoga</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
@@ -97,7 +100,7 @@
     </div>
 
     <div class="box">
-        <img src="/img/img3.jpg" alt="">
+        <img src="/img/ptrain.jpg" alt="">
         <div class="info">
             <h3>trainer</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
@@ -106,7 +109,7 @@
     </div>
 
     <div class="box">
-        <img src="/img/img4.jpg" alt="">
+        <img src="/img/equi.jpg" alt="">
         <div class="info">
             <h3>equipments</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
@@ -115,7 +118,7 @@
     </div>
 
     <div class="box">
-        <img src="/img/img5.jpg" alt="">
+        <img src="/img/boxing.jpg" alt="">
         <div class="info">
             <h3>boxing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
@@ -124,7 +127,7 @@
     </div>
 
     <div class="box">
-        <img src="/img/img6.jpg" alt="">
+        <img src="/img/weight.jpg" alt="">
         <div class="info">
             <h3>weight lifting</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
@@ -137,17 +140,84 @@
 </section>
 
 <!-- service section ends -->
-<!-- plan section starts  -->
 
-<section class="plan" id="plan">
+<!-- trainer section starts  -->
 
-<h1 class="heading">Membership Plan</h1>
+<section class="trainer" id="trainer">
+
+<h1 class="heading">our trainers</h1>
 
 <div class="box-container">
 
     <div class="box">
-        <h3 class="title">Basic</h3>
-        <h3 class="price">Rs 5000<span>/m</span></h3>
+        <img src="/img/train1.jpg" alt="">
+        <div class="info">
+            <h3>John Deo</h3>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="/img/train4.jpg" alt="">
+        <div class="info">
+            <h3>Racheal Bill</h3>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="/img/train2.jpg" alt="">
+        <div class="info">
+            <h3>Sam Volt</h3>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="/img/train5.jpg" alt="">
+        <div class="info">
+            <h3>Hailey Johanson</h3>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- trainer section ends -->
+
+<!-- plan section starts  -->
+
+<section class="plan" id="plan">
+
+<h1 class="heading">membership plan</h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <h3 class="title">basic</h3>
+        <h3 class="price">$10<span>/mo</span></h3>
         <h3 class="month">3 months</h3>
         <ul>
             <li><i class="fas fa-check"></i>weight lifting</li>
@@ -156,12 +226,12 @@
             <li><i class="fas fa-check"></i>training</li>
             <li><i class="fas fa-check"></i>protein powder</li>
         </ul>
-        <a href="#"><button class="btn">Check Out</button></a>
+        <a href="#"><button class="btn">check out</button></a>
     </div>
 
     <div class="box">
-        <h3 class="title">Standard</h3>
-        <h3 class="price">Rs 20000<span>/m</span></h3>
+        <h3 class="title">standard</h3>
+        <h3 class="price">$20<span>/mo</span></h3>
         <h3 class="month">6 months</h3>
         <ul>
             <li><i class="fas fa-check"></i>weight lifting</li>
@@ -170,12 +240,12 @@
             <li><i class="fas fa-check"></i>training</li>
             <li><i class="fas fa-check"></i>protein powder</li>
         </ul>
-        <a href="#"><button class="btn">Check Out</button></a>
+        <a href="#"><button class="btn">check out</button></a>
     </div>
 
     <div class="box">
-        <h3 class="title">Premium</h3>
-        <h3 class="price">Rs 30000<span>/m</span></h3>
+        <h3 class="title">premium</h3>
+        <h3 class="price">$30<span>/mo</span></h3>
         <h3 class="month">12 months</h3>
         <ul>
             <li><i class="fas fa-check"></i>weight lifting</li>
@@ -184,7 +254,7 @@
             <li><i class="fas fa-check"></i>training</li>
             <li><i class="fas fa-check"></i>protein powder</li>
         </ul>
-        <a href="#"><button class="btn">Check Out</button></a>
+        <a href="#"><button class="btn">check out</button></a>
     </div>
 
 </div>
@@ -208,7 +278,7 @@
 
     <div class="inputBox">
         <input type="email" placeholder="your email">
-        <input type="number" placeholder="your number">
+        <input type="text" placeholder="your number">
     </div>
 
     <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
@@ -224,12 +294,13 @@
 <!-- footer section starts  -->
 
 <section class="footer">
-	<div class="share">
-		<a href="#" class="fab fa-facebook-f"></a>
-		<a href="#" class="fab fa-twitter"></a>
-		<a href="#" class="fab fa-instagram"></a>
-		<a href="#" class="fab fa-linkedin"></a>
-	</div>
+    <div class="share">
+    <a href="#" class="fab fa-facebook-f"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-linkedin"></a>
+</div>
+
 </section>
 
 <!-- footer section ends -->
@@ -246,7 +317,11 @@
 
 
 
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
 
 
 </body>
