@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Placement Manager</title>
+</head>
+<body>
+<div align="center">
+     <h1>Student List</h1>
+     <a href="/new">Create New Profile</a>
+     <br/><br/>
+     <table border="1" cellpadding="10">
+           <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Branch</th>
+                    <th>Year</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                  <tr th:each="student : ${listStudents}">
+                      <td th:text="${student.id}">Id</td>
+                      <td th:text="${student.name}">Name</td>
+                      <td th:text="${student.mobile}">Mobile</td>
+                      <td th:text="${student.branch}">Branch</td>
+                      <td th:text="${student.year}">Year</td>
+                      <td th:text="${student.percentage}">Percentage</td>
+                      <td><a th:href="@{/edit/{id}(id=${student.id})}">Edit</a></td>
+                      <td><a th:href="@{/delete/{id}(id=${student.id})}">Delete</a></td>
+                  </tr>
+            </tbody>
+     </table>
+     </div> 
+</body>
+</html>
