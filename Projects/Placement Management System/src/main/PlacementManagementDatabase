@@ -1,0 +1,15 @@
+create database Placement;
+use Placement;
+show tables;
+create table Student
+(
+Id int auto_increment,
+Name varchar(45) not null,
+Mobile varchar(45) not null,
+Branch varchar(45) not null,
+Year varchar(10) not null,
+Percentage float not null,
+primary key(id)
+);
+drop table Student; 
+select * from Student;
