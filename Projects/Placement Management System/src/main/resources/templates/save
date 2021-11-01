@@ -5,6 +5,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-     <h1>Your Data is saved</h1>
+   <div align="center">
+     <h1>Your Data is saved successfully !!</h1>
+   </div>
 </body>
 </html>
