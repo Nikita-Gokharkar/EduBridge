@@ -8,11 +8,12 @@
 <body>
     <div align="center">
          <h1>Create New Profile</h1>
-         <br />
-         <form action="#" th:action="@{/save}" th:object="${student}"
-               method="post">
-               
-               <table border="0" cellpadding="10">
+         <br/>
+         
+          <form action="#" th:action="@{/save}" th:object="${student}" method="post">
+              
+               <table border="0" cellpadding="25">
+                
                    <tr>
                        <td>Student Name:</td>
                        <td><input type="text" th:field="*{name}" /></td>
@@ -36,8 +37,10 @@
                    <tr>
                        <td colspan="2"><button type="submit">Save</button> </td>
                    </tr>
+                 
                </table>
           </form>
+        
     </div>
 </body>
 </html>
