@@ -10,6 +10,6 @@ Spring Boot,
 MySQL
 
 Dependencies:
-Thyme Leaf
-Spring Data JPA
-Spring Web
+Thyme Leaf,
+Spring Data JPA,
+Spring Web,
